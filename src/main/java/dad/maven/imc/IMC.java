@@ -19,12 +19,12 @@ public class IMC extends Application {
 
 		try {
 			Text text = new Text("Peso");
-			TextField Peso = new TextField("0");
+			final TextField Peso = new TextField("0");
 			Peso.setPrefColumnCount(4);
 			Text text2 = new Text("Altura");
-			TextField Altura = new TextField("0");
+			final TextField Altura = new TextField("0");
 			Altura.setPrefColumnCount(4);
-			Text TextResul = new Text("");
+			final Text TextResul = new Text("");
 
 			HBox PesoBox = new HBox();
 			PesoBox.setAlignment(Pos.BASELINE_CENTER);
@@ -35,7 +35,7 @@ public class IMC extends Application {
 			Alturabox.setAlignment(Pos.BASELINE_CENTER);
 			Alturabox.setSpacing(5);
 			Alturabox.getChildren().addAll(text2, Altura);
-			Text IMC = new Text("");
+			final Text IMC = new Text("");
 			Button Calcular = new Button("Calcular");
 			Calcular.setOnAction(new EventHandler<ActionEvent>() {
 				public void handle(ActionEvent event) {
